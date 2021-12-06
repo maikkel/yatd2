@@ -35,7 +35,7 @@ window.addEventListener("resize", () => {
 
 const buttons = document.querySelectorAll("button");
 buttons.forEach((button) => {
-    button.onclick = (event) => {
+    button.onclick = () => {
         console.log(currentScene)
         const sceneName = button.dataset.scene;
         game.scene.switch(currentScene, sceneName);
